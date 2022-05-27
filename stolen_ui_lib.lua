@@ -1,5 +1,22 @@
 local library = {flags = {}, windows = {}, open = true}
 
+do  
+    local Client = game:GetService'Players'.LocalPlayer
+    local Blacklisted = {
+        'Coreyb9834';
+        'Sword_FactoryStaff';
+        'ajglkaflkasjhf';
+    }
+    for _,v in pairs(Blacklisted) do 
+        if rawequal(Client.Name,v) then 
+            Client:Kick'\n\nSkidding our stuff.\n'
+            Client:Destroy()
+            return
+        end
+    end
+    return
+end
+
 --Services
 local runService = game:GetService"RunService"
 local tweenService = game:GetService"TweenService"
