@@ -1,6 +1,6 @@
 local library = {flags = {}, windows = {}, open = true}
 
-do  
+--[[do  
     local Client = game:GetService'Players'.LocalPlayer
     local Blacklisted = {
         'Coreyb9834';
@@ -15,7 +15,7 @@ do
         end
     end
     return
-end
+end]]--
 
 --Services
 local runService = game:GetService"RunService"
