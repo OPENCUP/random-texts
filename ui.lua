@@ -649,7 +649,7 @@ local function createSlider(option, parent)
 
         library.flags[self.flag] = value
         self.value = value
-        inputvalue.Text = math.floorvalue
+        inputvalue.Text = value
         self.callback(value)
     end
 end
