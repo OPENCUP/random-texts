@@ -637,6 +637,7 @@ local function createSlider(option, parent)
     function option:SetValue(value)
         value = round(value, option.places)
         value = math.clamp(value, self.min, self.max)
+        value = math.floor(value)
 
         circle:TweenPosition(UDim2.new((value - self.min) / (self.max - self.min), 0, 0.5, 0), "Out", "Quad", 0.1, true)
         if self.min >= 0 then
@@ -648,7 +649,7 @@ local function createSlider(option, parent)
 
         library.flags[self.flag] = value
         self.value = value
-        inputvalue.Text = value
+        inputvalue.Text = math.floorvalue
         self.callback(value)
     end
 end
